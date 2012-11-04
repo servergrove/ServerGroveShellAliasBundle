@@ -10,7 +10,7 @@ so the commands can be autocompleted with the tab key.
     $ php app/console generate:shell:aliases
     $ php app/console generate:shell:aliases --prefix=myapp --php=/usr/local/bin/php --absolute
 
-The list of aliases that is generates would look like this:
+The list of aliases that it generates would look like this:
 
     alias console-help="php app/console help"
     alias console-list="php app/console list"
@@ -29,7 +29,7 @@ The list of aliases that is generates would look like this:
     alias console-swiftmailer-spool-send="php app/console swiftmailer:spool:send"
     alias console-assetic-dump="php app/console assetic:dump"
 
-Then, you can start typing the name of the command and auto-complete with the tab key: console-s[TAB] would complete to
+Then, you can start typing the name of the command and auto-complete with the tab key: console-s[TAB] will complete to
 console-server-run.
 
 If the absolute option is defined, the aliases will include the absolute path of the Symfony application, so you can
@@ -39,9 +39,7 @@ call these commands from anywhere in the filesystem.
 
 Add the bundle with Composer:
 
-    $ php composer.phar require servergrove/shell-alias-bundle
-
-    $ php composer.phar install
+    $ php composer.phar require "servergrove/shell-alias-bundle dev-master"
 
 Enable it in your app/AppKernel.php
 
