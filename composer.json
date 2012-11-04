@@ -17,5 +17,5 @@
     "autoload": {
         "psr-0": { "ServerGrove\\Bundle\\ShellAliasBundle": "" }
     },
-    "target-dir": "ServerGrove\Bundle\ShellAliasBundle"
+    "target-dir": "ServerGrove/Bundle/ShellAliasBundle"
 }
