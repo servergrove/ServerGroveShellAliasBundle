@@ -10,6 +10,28 @@ so the commands can be autocompleted with the tab key.
     $ php app/console generate:shell:aliases
     $ php app/console generate:shell:aliases --prefix=myapp --php=/usr/local/bin/php --absolute
 
+The list of aliases that is generates would look like this:
+
+    alias console-help="php app/console help"
+    alias console-list="php app/console list"
+    alias console-assets-install="php app/console assets:install"
+    alias console-cache-clear="php app/console cache:clear"
+    alias console-cache-warmup="php app/console cache:warmup"
+    alias console-config-dump-reference="php app/console config:dump-reference"
+    alias console-container-debug="php app/console container:debug"
+    alias console-router-dump-apache="php app/console router:dump-apache"
+    alias console-router-debug="php app/console router:debug"
+    alias console-router-match="php app/console router:match"
+    alias console-server-run="php app/console server:run"
+    alias console-translation-update="php app/console translation:update"
+    alias console-init-acl="php app/console init:acl"
+    alias console-twig-lint="php app/console twig:lint"
+    alias console-swiftmailer-spool-send="php app/console swiftmailer:spool:send"
+    alias console-assetic-dump="php app/console assetic:dump"
+
+Then, you can start typing the name of the command and auto-complete with the tab key: console-s[TAB] would complete to
+console-server-run.
+
 If the absolute option is defined, the aliases will include the absolute path of the Symfony application, so you can
 call these commands from anywhere in the filesystem.
 
