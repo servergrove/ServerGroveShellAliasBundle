@@ -1,0 +1,21 @@
+{
+    "name": "servergrove/shell-alias-bundle",
+    "description": "This bundle generates a list of shell aliases for commands registered in the Symfony application",
+    "keywords": ["shell","aliases", "cli"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":" Pablo Godel",
+            "email": "pablo@servergrove.com",
+            "homepage": "http://servergrove.com"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "2.*"
+    },
+    "autoload": {
+        "psr-0": { "ServerGrove\\Bundle\\ShellAliasBundle": "" }
+    },
+    "target-dir": "ServerGrove\Bundle\ShellAliasBundle"
+}
